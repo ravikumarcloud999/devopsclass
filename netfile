@@ -1,0 +1,7 @@
+new File('/tmp/file.txt').withWriter('UTF-8') { writer ->
+    try {
+        writer << 'hello world\n'
+    } finally {
+        writer.close()
+    }
+}
